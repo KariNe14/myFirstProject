@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'myFirstProject'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+properties {
+    systemProp.file.encoding=utf-8
+}
+//compileJava.options.encoding = 'UTF-8'
+//tasks.withType(JavaCompile) {
+//    options.encoding = 'UTF-8'
+//}
+dependencies {
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.1'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+
+}
+
+
